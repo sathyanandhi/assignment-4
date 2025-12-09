@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Building a Personal Portfolio with a Contact Form </title>
+    </head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
+    <style>
+        body{
+            background-color: blue;
+            font-family: "Sofia";
+            background: linear-gradient(360deg,red,blue,yellow,violet,green,blue,orange);
+            box-shadow: 20px 40px 100px;
+            border-color:darkviolet ;
+            border: crimson;
+            height: 100%vh;
+            width:100%;
+            margin: 10px;
+            display: inline-block;
+            
+            
+        }
+         div{
+            background-color: pink;
+         }
+        
+        
+            nav{
+                
+                justify-content: space-between;
+            
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;                
+              text-align: center;
+                background-color:yellow;
+                font-size: 20px;
+                margin: 10px 20px;
+                padding:10px;
+                position:relative;
+
+            }
+            h1{
+                        background-color: darkred;
+                        
+                    }
+        
+        .port{
+            text-align: center;
+            background-color: brown;
+            font-size: 50px;
+
+                    }
+                   .heading{
+                    background-color: darkgreen;
+                    
+                    h2{
+                            background-color: blueviolet;
+                        }
+                        ul{
+                            background-color: fuchsia;
+                            color: black;
+                        }
+                   }
+                   .about{
+                    background-color: crimson;
+                    color: chartreuse;
+                   }
+                   .table{
+                    background-color: crimson;
+                    color: darkblue;
+                    h1{
+                        background-color: burlywood;
+                        color: darkorchid;
+                        
+                    }
+                   }
+                   .image{
+                    position: relative;
+                   }
+                   div#transition{
+                    font-style: italic;
+                    font-family: "sofia",sans-serif;
+                    font-size: large;
+                    background-color:  darkmagenta;
+                    transition: width 5s;
+                    width: 100%;
+                    height: 100px;
+                    margin: auto;
+                    overflow: hidden;
+                   }
+                div#transition:hover{
+            width: 50%;
+            height: 80%;
+            cursor: pointer;
+        }
+        button{
+            background-color:green;
+            color: gold;
+           margin:10px 5px;
+           padding: 30px 50px;
+           cursor: pointer;
+           border-radius: 20px;
+           
+        }
+        button:hover{
+            background-color: blue;
+            color: black;
+           }
+           nav{
+            border-color: darkgreen;
+            border-radius: 1px;
+            cursor: pointer;
+           }
+           nav:hover{
+            background-color:rgb(128, 128, 128);
+            font-family: sans-serif;
+            
+           }
+           .about>h1{
+            animation: about1 1s 1;
+           }
+           @keyframes about1
+           {
+             100%{transform: rotate(360deg);}
+        }
+        .about>p{
+            animation: p1 1s 1;
+        }
+        @keyframes p1{
+            100%{transform:rotate(360deg);
+               
+            }
+        }
+        @media screen and (max-width:768px)
+            {
+                           
+            body{
+                float:none;
+                width:100%;
+                display: block;
+                background-color: blue;
+                margin-right: 10px;
+        
+                            
+            }
+            nav{
+                display:grid;
+                grid: column 3px;
+                margin-left: 10px;
+                padding: 10px;
+                justify-content: center;
+                align-items: center;
+               
+
+            }
+            
+        }
+        @media((min-width:769px)and(max-width:1024px)){
+            body{
+            
+                width:100%;
+                display: block;
+                 margin-left: 5px;
+                 font-size: 5px;
+
+            }
+
+                 }
+                  @media((min-width:1024px)and (max-width:2560px)){
+
+                
+                  body{
+                    width:100% ;
+                    background-color: orange;
+                
+
+                  }
+                }
+       
+       
+                   
+    </style>
+<body>
+    <header class="port" href="#">Portfolio    </header>
+    <section>
+        
+         <nav>
+                  
+            <a href="#about1">About</a>
+            <a href="#project1">Projects</a>
+           <a href="#contact1">Contact</a>
+           
+        </nav>
+       
+
+
+    </section >
+        <section class="about" id="about1">
+            <h1 style="text-decoration: underline;">About Me</h1>
+            <P style="font-size: larger;">I was born on Feb 4,1993 in pollachi, Coimbatore district,which is located in the Tamilnadu,My Father name is Balasundaram Kandiyagounder 
+                and Mother name is Maheswari Balasundaram.I have two Elder sisters and I am the last one for my parents. My Father is a Farmer and My Mother is a Homemaker.
+With help of my Parents constant effort,hardwork,dedication,Sacrifices all the three daughters were completed Post Graduation.
+ I had worked as Assisstant Professor as well as Aptitude Trainer in Sasurie College of Engineering.Now I am working as a Full Stack Developer.</P>
+<br><div class=image><img  src="mypic.jpg"   alt="Not found" width="200px" height="200px" /></div>
+<div id="transition"><p class="font-effect-fire"><h2 class="font-effect-fire">Early life and education :</h2><p class=font-effect-fire> had completed Master of Engineering in the department of Power Electronics and Drives at Sri Shakthi Institute of Engineering and Technology(Anna University) in Coimbatore during the period of 2014 to 1016 Batch with Percentage of<mark> 80.12</mark>.
+And she completed her Bacholor of Engineering in the deparment of Electrical and Electronics Engineering at Sri Krishnna College of Technology,(Anna University) in Coimbatore during the Period of 2010 -2014 Batch with the Percentage of<mark>77.30</mark>  .She completed her school in Mariammal Girls Higher Secondary School,pollachi with the Percentage of<mark>92.33</mark> .She completed her SSLC in Goverment Girls High School,Negamam with <mark>89.12</mark> Percentage.</p></P></div>
+        </section>
+    <section class="heading">
+        <h1 style="text-decoration: underline;"id="project1">Projects</h1>
+        <h2>Name of the Projects</h2>
+        <ul>
+            <li>Types of Styling in CSS
+                <!--  Styling used in the css ,which is inline styling,Internal styling,External styling-->
+
+            </li>
+            <li>Chessbord using css grid</li>
+            <li>Student mark list using Table </li>
+        </ul>
+    </section>
+    <div>
+        <h1 style="text-decoration: underline;">i)Types of styling in css</h1>
+        <p>CSS is used to style and layout web pages, controlling the appearance of HTML elements. It allows developers to create visually appealing designs and ensure a consistent look across a website.
+
+            Types of CSS:
+CSS can be implemented in three different ways:<br><div style="color:darkblue">
+ 1.Inline CSS <br>
+ 2.Internal or Embedded CSS:<br>
+ 3.External CSS<br></div><br><br>  
+   </div>
+<div>
+    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhy-tUTYRG8fHtJ3Sq8Pskj32rAtX2fel5bquBI6c5Y7FN7-9IfcG-0zKKu77z0oVEU6Jpbt86tNXOHtPS2WhgGc6nJ6d3UJKaBUM8Tdzff9haKOuFoskK661GO9-wNsRQ6H9jqKpPSGaii7jodORUi1qKIk4FolkVZHR6rR5ncDENerFTZSPQPqxp52SA/s1600/Type%20of%20CSS.png" width="350px" height="400px" alt="not found">
+<h1>1. Inline CSS</h1>
+<p>Inline CSS involves applying styles directly to individual HTML elements using the style attribute. This method allows for specific styling of elements within the HTML document, overriding any external or internal styles.</p>
+<h1>2. Internal or Embedded CSS:</h1>
+<p>Internal or Embedded CSS is defined within the HTML document's style element. It applies styles to specified HTML elements. The CSS rule set should be within the HTML file in the head section, i.e. the CSS is embedded within the style tag inside the head section of the HTML file.<p>
+ <h1>3. External CSS</h1>
+    <p>External CSS is the most commonly used form of CSS. It involves linking an external style sheet file to the HTML document. External CSS is ideal for larger projects with multiple HTML documents because it allows developers to maintain a consistent look and feel across multiple pages. Heres an example of external CSS:
+
+In the example above, the CSS code is stored in a separate file called “style.css.” The HTML code links to this file using the <link> tag in the head section. This is the recommended approach for larger projects because it allows developers to make changes to the CSS file without affecting the HTML code.</p>
+<p>An Example images of different types of styling used in the project is given below</p>
+<img src="img types of styling.png" width="350px" height="400px" alt="image not found">
+<h2>The types of styling used in the project link is given below</h2>
+<a href="types of styling.html"><button>Click here</button> </a>
+    </div>
+    <div>
+        <h1>ii)Chessbord using css grid</h1>
+        <p>Creating a chessboard in CSS involves using HTML and CSS to structure and style the board. We can achieve this by using a combination of nested div elements and applying appropriate CSS styles for the squares' color and layout. Below is an example of how you can create a simple 8x8 chessboard using CSS</p>
+         <p>An Example image of chessboard is given below</p>
+        <img src="https://geeksretreat.wordpress.com/wp-content/uploads/2012/06/html5-canvas-chess-board.png?w=595&h=597" alt="img not found" width="300px"height="300px">
+
+    <div><h2>The chessboard project link is given below</h2></div>
+    <a href="chessboard.html"><button>Click here</button> </a>
+    </div>
+    <section class="table">
+        <h1>iii)Student mark list using Table</h1>
+        <p>A student mark list can be effectively presented in HTML using a table structure. This allows for clear organization of student information and their respective subject scores.</p>
+   <!-- <P>Structure of an HTML Student Mark List:
+<! <table> Tag: The entire mark list is enclosed within the <table> tag.
+<thead> Tag (Table Head): This section defines the header row(s) of the table, typically containing column titles.
+<tr> Tag (Table Row): Represents a single row within the table head.
+<th> Tag (Table Header): Defines a header cell within the <tr>, containing the names of the columns (e.g., "Roll No.", "Name", "Subject 1 Marks", "Total", "Grade").
+<tbody> Tag (Table Body): This section contains the actual data rows for each student.
+<tr> Tag (Table Row): Represents a single row for a student's data.
+<td> Tag (Table Data): Defines a data cell within the <tr>, containing the specific information for that student (e.g., "01", "John Doe", "85", "420", "A").
+<!<tfoot> Tag (Table Foot - Optional): This section can be used to display summary information like total marks for all students or other aggregate data. It follows the same structure as <thead> with <tr> and <th> or <td> elements.</P> -->
+     <p>The example of student marklist using table is given below</p>
+    <img src="https://image.slidesdocs.com/responsive-images/sheets/download-your-marksheet-instantly:-enhance-academic-records-with-ease-excel-template_1cd49a2126__max.jpg" alt="image not found" width="300px" height="300px">
+
+    <div><h2> The student mark list project link is given below</h2>
+     <a href="table.html"><button>Click here</button> </a>
+   </div>    
+    </section>
+    <div >
+        <h1  style="text-decoration: underline;"style="color: red;" class="contact form" id="contact1">Contact Form</h1>
+        <p style="background-color: burlywood; color: blue;">An HTML contact form is a web form that collects user input, such as names, email addresses, messages, and phone numbers, for various purposes. This data is then sent to a specified destination, such as an email inbox or a form backend.
+For beginners, a basic contact form might include only a few fields like name and email field, while advanced forms often feature spam protection, email notifications, and integration with external tools. Whether it’s a simple contact form or one created using an online form builder, its purpose remains the same: to facilitate communication between users and website administrators.</p>
+  <h2>The Contact Form link is given below</h2>
+  <a href="contactform.html"> <button>Click here</button> </a>   </div>
+</body>
+</html>
